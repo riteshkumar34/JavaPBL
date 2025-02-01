@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPD Registration</title>
+    <link rel="stylesheet" href="opd_registration.css">
+</head>
+<body>
+    <div class="form">
+        <form action="">
+            <label for="name">Name</label>
+            <input type="text"id="name"placeholder="Enter the patient Name"minlength="3"maxlength="16">
+            <label for="DOB">Date of birth</label>
+            <input type="date"id="DOB"placeholder="Enter your date of birth">
+            <label for="mobile_number">Enter Your Mobile Number</label>
+            <input type="tel" id="mobile_number" name="mobile_number" placeholder="Enter mobile number" maxlength="10" pattern="[0-9]{10}">
+            <label for="aadhar_number">Enter your Aadhar Number</label>
+            <input type="tel"id="mobile_number"name="aadhar_number"placeholder="Enter Your Aadhar Number" maxlength="12"pattern="[0-9]{10}">
+            <label for="gender">Choose Your Gender</label>
+            <input type="radio" name="gender" value="male"> Male<br>
+            <input type="radio"name="gender" value="female"> Female<br>
+            <input type="radio"name="gender"value="other"> other<br>
+            <label for="doctor">Choose the doctor</label>
+            <input type="radio"name="doctor"value="Gyncologist">Gyncologist<br>
+            <input type="radio"name="doctor"value="Child Specialist">Child Specialist<br>
+            <label for="DOT">Date of Treatment</label>
+            <input type="date"id="DOT"placeholder="Enter the date of treatment">
+            <label for="slot">Choose Your Slot</label>
+            <input type="radio"name="slot"value="10-1">10Am-1Pm<br>
+            <input type="radio"name="slot"value="2-5">2Pm-5Pm<br>
+            <label for="textarea">Enter Your Feedback</label>
+            <textarea name="textarea" id="textarea" rows="4"cols="50">Enter Your Feedback</textarea>
+        </form>
+    </div>
+</body>
+<script src="opd_registration.js"></script>
+</html>

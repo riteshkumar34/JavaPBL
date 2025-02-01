@@ -1,0 +1,202 @@
+*{
+    margin:0;
+    padding:0;
+}
+.heading{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 20px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color:orange;
+    color:black;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.navbar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar nav ul li {
+    position: relative;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease, background-color 0.3s ease; 
+}
+
+
+.navbar nav ul li a:hover {
+    color: blue; 
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 50%;
+}
+
+.navbar nav ul li ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+}.home {
+    background-image: url('hospital_Image.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    color: pink;
+    text-align: center; 
+}
+.home h1{
+    text-align: center;
+    font-size: 40px;
+    padding: auto;
+    margin: 0 auto auto auto;
+    text-decoration: underline;
+
+}
+
+.doctor {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.doctor-profile {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.doctor-profile img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.doctor-profile h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.doctor-profile p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+}
+
+.doctor-profile .specialization {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+.doctor-profile .contact {
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+
+@media (max-width: 768px) {
+    .doctor-profile {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    width:100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-logo {
+    width: 150px;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+}
+.icon{
+    display:flex;
+    margin: 0;
+    padding:0;
+    justify-content: space-between;
+    gap:1.5rem;
+}
