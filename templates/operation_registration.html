@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OPD Registration</title>
-    <link rel="stylesheet" href="opd_registration.css">
+    <link rel="stylesheet" href="../static//opd_registration.css">
 </head>
 <body>
     <div class="form">
         <form action="">
             <label for="name">Name</label>
             <input type="text"id="name"placeholder="Enter the patient Name"minlength="3"maxlength="16">
-            <label for="DOB">Date of birth</label>
-            <input type="date"id="DOB"placeholder="Enter your date of birth">
+            <label for="age">Enter Your Age</label>
+            <input type="number"id="age"placeholder="Enter your age"minvalue=1>
             <label for="mobile_number">Enter Your Mobile Number</label>
             <input type="tel" id="mobile_number" name="mobile_number" placeholder="Enter mobile number" maxlength="10" pattern="[0-9]{10}">
             <label for="aadhar_number">Enter your Aadhar Number</label>
@@ -34,5 +34,5 @@
         </form>
     </div>
 </body>
-<script src="opd_registration.js"></script>
+<script src="../static/opd_registration.js"></script>
 </html>

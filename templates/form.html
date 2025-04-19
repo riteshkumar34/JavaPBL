@@ -1,0 +1,51 @@
+<!--This is opd_registration.html-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPD Registration</title>
+    <link rel="stylesheet" href="../static/opd_registration.css">
+</head>
+<body>
+    <div class="form">
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Enter the patient Name" minlength="3" maxlength="16" required>
+    
+          <label for="age">Enter Your Age</label>
+          <input type="number" id="age" placeholder="Enter your age" min="1" required>
+    
+          <label for="mobile_number">Mobile Number</label>
+          <input type="tel" id="mobile_number" placeholder="Enter mobile number" maxlength="10" pattern="[0-9]{10}" required>
+    
+          <label for="aadhar_number">Aadhar Number</label>
+          <input type="tel" name="aadhar_number" placeholder="Enter Your Aadhar Number" maxlength="12" pattern="[0-9]{12}" required>
+    
+          <label>Gender</label>
+          <input type="radio" name="gender" value="Male"> Male
+          <input type="radio" name="gender" value="Female"> Female
+          <input type="radio" name="gender" value="Other"> Other
+    
+          <label>Doctor</label>
+          <input type="radio" name="doctor" value="Gynecologist"> Gynecologist
+          <input type="radio" name="doctor" value="Child Specialist"> Child Specialist
+    
+          <label for="DOT">Date of Treatment</label>
+          <input type="date" id="DOT" required>
+    
+          <label>Slot</label>
+          <input type="radio" name="slot" value="10AM-1PM"> 10AM–1PM
+          <input type="radio" name="slot" value="2PM-5PM"> 2PM–5PM
+    
+          <label for="textarea">Feedback</label>
+          <textarea id="textarea" rows="4" cols="50"></textarea>
+    
+          <button type="submit">Generate Receipt</button>
+        </form>
+      </div>
+</body>
+<script src="../static/opd_registration.js"></script>
+<script src="../static/script.js"></script>
+</html>
